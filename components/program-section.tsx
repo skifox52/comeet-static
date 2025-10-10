@@ -17,7 +17,7 @@ export default function ProgramSection() {
     {
       time: "18h30",
       title: "Début des festivités !",
-      location: "Salons Hoches - Salon Elysée",
+      location: "Salons Hoche - Salon Elysée",
       address: "9, avenue Hoche 75008",
       parking:
         "Avenue Hoche ou Parking INDIGO Hoche - 18 Avenue Hoche, 75008 Paris",
@@ -38,9 +38,7 @@ export default function ProgramSection() {
         <h2 className="font-serif text-3xl md:text-4xl text-center text-[#8B2332] mb-4">
           Programme de la journée
         </h2>
-        <p className="text-center text-gray-600 mb-12">
-          21st - Cérémonie & Réception
-        </p>
+        <p className="text-center text-gray-600 mb-12">Cérémonie & Réception</p>
 
         <div className="grid md:grid-cols-2 gap-8 items-start">
           {/* Timeline */}

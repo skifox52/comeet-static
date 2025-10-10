@@ -4,6 +4,7 @@ import { Cormorant_Garamond, Lato } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { Suspense } from "react"
+import Loading from "@/components/loading"
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -32,8 +33,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`${lato.variable} ${cormorant.variable} font-sans antialiased`}>
-        <Suspense fallback={<div>Loading...</div>}>
+      <body
+        className={`${lato.variable} ${cormorant.variable} font-sans antialiased`}
+      >
+        <Suspense fallback={<Loading />}>
           {children}
           <Analytics />
         </Suspense>

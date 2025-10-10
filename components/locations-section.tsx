@@ -7,36 +7,35 @@ export default function LocationsSection() {
 
   const locations = [
     {
-      title: "Cérémonie & Réception",
+      title: "Cérémonie civile",
       name: "Mairie de Courbevoie",
       address: "2 Pl. de l'Hôtel de ville, 92400 Courbevoie",
       parking: "Parking Charras - 18 rue de l'Alma 92400 Courbevoie",
       coordinates: { lat: 48.8977, lng: 2.2567 },
-      mapsUrl: "https://www.google.com/maps/dir/?api=1&destination=2+Pl.+de+l'Hôtel+de+ville,+92400+Courbevoie",
+      mapsUrl:
+        "https://www.google.com/maps/dir/?api=1&destination=2+Pl.+de+l'Hôtel+de+ville,+92400+Courbevoie",
     },
     {
-      title: "Hébergement",
-      name: "Salons Hoches - Salon Elysée",
+      title: "Salle de réception",
+      name: "Salons Hoche - Salon Elysée",
       address: "9, avenue Hoche 75008",
-      parking: "Avenue Hoche ou Parking INDIGO Hoche - 18 Avenue Hoche, 75008 Paris",
+      parking:
+        "Avenue Hoche ou Parking INDIGO Hoche - 18 Avenue Hoche, 75008 Paris",
       coordinates: { lat: 48.8756, lng: 2.3019 },
-      mapsUrl: "https://www.google.com/maps/dir/?api=1&destination=9+avenue+Hoche+75008+Paris",
-    },
-    {
-      title: "Transport",
-      name: "Informations de transport",
-      address: "Des informations de transport seront fournies prochainement",
-      parking: "",
-      coordinates: { lat: 48.8866, lng: 2.2793 },
-      mapsUrl: "",
+      mapsUrl:
+        "https://www.google.com/maps/dir/?api=1&destination=9+avenue+Hoche+75008+Paris",
     },
   ]
 
   return (
-    <section className="py-16 md:py-24 px-4 bg-white">
+    <section className="py-16 md:py-24 px-4 bg-white" id="locations-section">
       <div className="max-w-6xl mx-auto">
-        <h2 className="font-serif text-3xl md:text-4xl text-center text-[#8B2332] mb-4">Les lieux</h2>
-        <p className="text-center text-gray-600 mb-12">Les emplacements des lieux</p>
+        <h2 className="font-serif text-3xl md:text-4xl text-center text-[#8B2332] mb-4">
+          Les adresses du grand jour !
+        </h2>
+        <p className="text-center text-gray-600 mb-12">
+          Les emplacements des lieux
+        </p>
 
         <div className="grid md:grid-cols-2 gap-8 items-start">
           {/* Locations List */}
@@ -47,10 +46,18 @@ export default function LocationsSection() {
                 className="border-l-2 border-[#8B2332] pl-6 cursor-pointer hover:bg-gray-50 p-4 -ml-4 transition-colors"
                 onClick={() => setSelectedLocation(index)}
               >
-                <h3 className="text-[#8B2332] font-medium mb-2">{location.title}</h3>
-                <p className="font-medium text-gray-900 mb-1">{location.name}</p>
+                <h3 className="text-[#8B2332] font-medium mb-2">
+                  {location.title}
+                </h3>
+                <p className="font-medium text-gray-900 mb-1">
+                  {location.name}
+                </p>
                 <p className="text-sm text-gray-600 mb-1">{location.address}</p>
-                {location.parking && <p className="text-xs text-gray-500 mb-2">Stationnement : {location.parking}</p>}
+                {location.parking && (
+                  <p className="text-xs text-gray-500 mb-2">
+                    Stationnement : {location.parking}
+                  </p>
+                )}
                 {location.mapsUrl && (
                   <a
                     href={location.mapsUrl}

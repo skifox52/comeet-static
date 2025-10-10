@@ -39,13 +39,7 @@ export default function HeroSection() {
   return (
     <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden bg-[url('/hero.jpg')] bg-cover bg-center after:bg-[#a765235e] after:inset-0 after:absolute after:opacity-37 after:z-0">
       {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url(/placeholder.svg?height=1080&width=1920&query=elegant+french+haussmann+building+facade+with+ornate+architecture)",
-        }}
-      >
+      <div className="absolute inset-0 bg-cover bg-center">
         <div className="absolute inset-0 bg-black/40" />
       </div>
 
@@ -55,7 +49,7 @@ export default function HeroSection() {
           15 Novembre 2025
         </p>
 
-        <h1 className="font-serif text-6xl md:text-8xl lg:text-5xl mb-8  tracking-[0.15em] font-bold">
+        <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl mb-8  tracking-[0.15em] font-bold">
           SOPHIE & YACINE
         </h1>
 
