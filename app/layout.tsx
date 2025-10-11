@@ -22,8 +22,7 @@ const lato = Lato({
 
 export const metadata: Metadata = {
   title: "Sophie & Yacine - 15 Novembre 2025",
-  description: "Rejoignez-nous pour célébrer notre mariage",
-  generator: "v0.app",
+  description: "Rejoins-nous pour célébrer notre mariage.",
 }
 
 export default function RootLayout({

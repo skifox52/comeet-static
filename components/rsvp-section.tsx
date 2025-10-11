@@ -150,7 +150,7 @@ export default function RsvpSection() {
             {/* Name Fields */}
             <div>
               <Label className="text-[#8B2332] mb-3 block">
-                Merci d'indiquer votre nom et prénom{" "}
+                Merci d'indiquer ton nom et prénom{" "}
                 <span className="text-red-500">*</span>
               </Label>
               <div className="grid grid-cols-2 gap-3">
@@ -265,7 +265,7 @@ export default function RsvpSection() {
             {accompanied === "oui" && (
               <div>
                 <Label className="text-[#8B2332] mb-3 block">
-                  Combien de personnes vous accompagneront ?{" "}
+                  Combien de personnes t'accompagneront ?{" "}
                   <span className="text-red-500">*</span>
                 </Label>
                 <Input
@@ -296,8 +296,8 @@ export default function RsvpSection() {
                 {!!guestCount && guestCount > 0 && (
                   <div className="space-y-4">
                     <Label className="text-[#8B2332] block">
-                      Merci d'indiquer le(s) nom(s) et prénom(s) des personnes
-                      qui vous accompagneront
+                      Merci d’indiquer le(s) nom(s) et prénom(s) des personnes
+                      qui t’accompagneront.
                     </Label>
                     {guests.map((guest, index) => (
                       <div key={index} className="grid grid-cols-2 gap-3">
@@ -359,7 +359,7 @@ export default function RsvpSection() {
               </Label>
               <Textarea
                 id="message"
-                placeholder="Votre message"
+                placeholder="Ton message"
                 {...register("message")}
                 className="border-gray-300 min-h-[100px]"
               />

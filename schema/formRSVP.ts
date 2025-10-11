@@ -6,10 +6,10 @@ export const rsvpFormSchema = z
     firstName: z.string().min(1, "Le prénom est obligatoire"),
     lastName: z.string().min(1, "Le nom est obligatoire"),
     attending: z.enum(["oui", "non", "pas-sur"], {
-      required_error: "Veuillez indiquer votre présence",
+      required_error: "Indique ta présence",
     }),
     accompanied: z.enum(["oui", "non"], {
-      required_error: "Veuillez indiquer si vous serez accompagné",
+      required_error: "Merci d’indiquer si tu seras accompagné.",
     }),
     guestCount: z.number().min(0).max(SEAT_LIMIT).optional(),
     guests: z
@@ -30,8 +30,7 @@ export const rsvpFormSchema = z
       return true
     },
     {
-      message:
-        "Veuillez indiquer le nombre de personnes qui vous accompagneront",
+      message: "Indique le nombre de personnes qui t'accompagneront.",
       path: ["guestCount"],
     }
   )
@@ -43,7 +42,7 @@ export const rsvpFormSchema = z
       return true
     },
     {
-      message: "Veuillez remplir tous les noms des invités",
+      message: "Merci de remplir tous les noms des invités.",
       path: ["guests"],
     }
   )

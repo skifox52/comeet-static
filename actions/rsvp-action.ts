@@ -101,7 +101,7 @@ export async function submitRsvpAction(
 
     return {
       success: true,
-      message: "Votre réponse a été enregistrée avec succès!",
+      message: "ta réponse a été enregistrée avec succès!",
     }
   } catch (error) {
     // Handle Zod validation errors
@@ -109,7 +109,7 @@ export async function submitRsvpAction(
       const zodError = error as any
       return {
         success: false,
-        message: "Veuillez corriger les erreurs dans le formulaire.",
+        message: "Merci de corriger les erreurs dans le formulaire.",
         errors: zodError.errors?.reduce(
           (acc: Record<string, string[]>, curr: any) => {
             const path = curr.path.join(".")
@@ -124,7 +124,7 @@ export async function submitRsvpAction(
 
     return {
       success: false,
-      message: "Une erreur s'est produite. Veuillez réessayer.",
+      message: "Une erreur s'est produite. Merci de réessayer.",
     }
   }
 }
