@@ -37,7 +37,7 @@ export default function HeroSection() {
   }
 
   return (
-    <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden bg-[url('/hero.jpg')] bg-cover bg-center after:bg-[#a765235e] after:inset-0 after:absolute after:opacity-37 after:z-0">
+    <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden bg-[url('/hero.jpeg')]  bg-cover bg-center after:bg-[#a765235e] after:inset-0 after:absolute after:opacity-37 after:z-0">
       {/* Background Image */}
       <div className="absolute inset-0 bg-cover bg-center">
         <div className="absolute inset-0 bg-black/40" />
@@ -54,7 +54,7 @@ export default function HeroSection() {
         </h1>
 
         <p className="text-sm md:text-base mb-10  leading-relaxed tracking-wide font-medium">
-          ont la joie de vous convier à leur mariage
+          ont la joie de te convier à leur mariage
           <br />
           le 15 novembre 2025 aux Salons Hoche
         </p>

@@ -81,10 +81,7 @@ export default function Footer() {
         </div>
         {/* Copyright */}
         <div className="text-center text-sm opacity-75 border-t border-white/20 pt-8 ">
-          <p>
-            © 2025 Sophie Azem & Yacine Belhadj-Adda by Comeet. All Rights
-            Reserved
-          </p>
+          <p>© 2025 Sophie & Yacine by Comeet. All Rights Reserved</p>
         </div>
       </div>
     </footer>

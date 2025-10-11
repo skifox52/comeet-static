@@ -9,7 +9,7 @@ export default function ProgramSection() {
     },
     {
       time: "15h30",
-      title: "Séance Photos",
+      title: "Séance Photo",
       location: "Parc Monceau",
       address: "1 Avenue Van Dyck 75008 Paris",
       parking: "Parking INDIGO Hoche - 18 Avenue Hoche, 75008 Paris",
@@ -25,7 +25,7 @@ export default function ProgramSection() {
     {
       time: "19h00",
       title: "Arrivée des mariés & ouverture du cocktail",
-      location: "Salons Hoches - Salon Elysée",
+      location: "Salons Hoche - Salon Elysée",
       address: "9, avenue Hoche 75008",
       parking:
         "Avenue Hoche ou Parking INDIGO Hoche - 18 Avenue Hoche, 75008 Paris",
@@ -65,11 +65,11 @@ export default function ProgramSection() {
           </div>
 
           {/* Image */}
-          <div className="rounded-lg overflow-hidden shadow-md h-[400px] md:h-[500px]">
+          <div className="rounded-lg overflow-hidden w-fit mx-auto h-[400px] md:h-[500px]">
             <img
               src="/prog.jpg"
               alt="Hawa Mahal"
-              className="w-full h-full object-cover"
+              className="w-fit h-full object-center mx-auto object-contain"
             />
           </div>
         </div>

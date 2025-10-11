@@ -184,7 +184,7 @@ export default function RsvpSection() {
             {/* Attending */}
             <div>
               <Label className="text-[#8B2332] mb-3 block">
-                Serez-vous présent à la réception ?{" "}
+                Serais-tu présent à la réception ?{" "}
                 <span className="text-red-500">*</span>
               </Label>
               <RadioGroup
@@ -213,8 +213,8 @@ export default function RsvpSection() {
                     htmlFor="pas-sur"
                     className="font-normal cursor-pointer"
                   >
-                    Je ne suis pas encore sûr, je vous informerai de la réponse
-                    plus tard
+                    Je ne suis pas encore sûr, je t'informerai de la réponse
+                    plus tard.
                   </Label>
                 </div>
               </RadioGroup>
@@ -228,7 +228,7 @@ export default function RsvpSection() {
             {/* Accompanied */}
             <div>
               <Label className="text-[#8B2332] mb-3 block">
-                Serez-vous accompagné ? <span className="text-red-500">*</span>
+                Seras-tu accompagné ? <span className="text-red-500">*</span>
               </Label>
               <RadioGroup
                 // Controlled by watch("accompanied")

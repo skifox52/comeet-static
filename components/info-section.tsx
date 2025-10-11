@@ -21,7 +21,7 @@ export default function InfoSection() {
             <div className="space-y-6">
               <div>
                 <p className="text-sm opacity-90 mb-2">
-                  Pour toute question, vous pouvez nous joindre :
+                  Pour toute question, tu peux nous joindre :
                 </p>
                 <div className="space-y-1">
                   <p className="text-sm">Sophie : 06 66 03 29 68</p>
@@ -40,8 +40,8 @@ export default function InfoSection() {
                   <p className="text-sm font-bold mt-2 italic">
                     Famille du marié :
                   </p>
-                  <p>Nassima : 06 59 76 00 44</p>
-                  <p>Ines : 06 59 76 91 72</p>
+                  <p>Sofiane : 07 60 42 56 63</p>
+                  <p>Halima : 06 66 42 65 47</p>
                 </div>
               </div>
             </div>
