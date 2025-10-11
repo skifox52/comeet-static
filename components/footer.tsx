@@ -39,7 +39,7 @@ export default function Footer() {
 
           {/* Links */}
           <div className="text-center md:text-left">
-            <h4 className="font-medium mb-4">Lien utiles</h4>
+            <h4 className="font-medium mb-4">Liens utiles</h4>
             <ul className="space-y-2 text-sm opacity-90">
               <li>
                 <button
