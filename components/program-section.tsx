@@ -69,7 +69,7 @@ export default function ProgramSection() {
             <img
               src="/prog.jpg"
               alt="Hawa Mahal"
-              className="w-fit h-full object-center mx-auto object-contain"
+              className="w-fit h-full object-center mx-auto object-cover"
             />
           </div>
         </div>
