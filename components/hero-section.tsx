@@ -56,7 +56,7 @@ export default function HeroSection() {
         <p className="text-base  md:text-2xl mb-10  leading-relaxed tracking-wide font-medium">
           ont la joie de te convier à leur mariage
           <br />
-          le 15 novembre 2025 aux Salons Hoche
+          qui aura lieu le 15 novembre 2025 aux Salons Hoche
         </p>
 
         <Button
