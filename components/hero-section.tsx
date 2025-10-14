@@ -44,7 +44,7 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto h-full md:flex md:items-center md:justify-center md:py-0 py-12 flex flex-col justify-between">
+      <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto h-full md:flex md:items-center md:justify-center md:py-0 py-16 flex flex-col justify-between">
         <p className="text-lg md:text-xl md:mb-8 tracking-[0.3em] font-light uppercase md:absolute md:top-12">
           15 Novembre 2025
         </p>
@@ -68,7 +68,7 @@ export default function HeroSection() {
           </Button>
         </div>
 
-        <div className="mt-12 md:mt-0 md:absolute md:bottom-12 flex justify-center gap-12 md:gap-20 lg:gap-24 w-full">
+        <div className="mt-12 md:mt-0 pb-16 md:pb-0  md:absolute md:bottom-12 flex justify-center gap-12 md:gap-20 lg:gap-24 w-full">
           <div className="text-center">
             <div className="text-7xl md:text-8xl lg:text-9xl font-serif font-bold mb-3 leading-none">
               {timeLeft.days}
