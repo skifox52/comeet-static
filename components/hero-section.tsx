@@ -37,14 +37,14 @@ export default function HeroSection() {
   }
 
   return (
-    <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden bg-[url('/hero.jpeg')]  bg-cover bg-center after:bg-[#a765235e] after:inset-0 after:absolute after:opacity-37 after:z-0">
+    <section className="relative min-h-screen  flex items-center justify-center overflow-hidden bg-[url('/hero.jpeg')]  bg-cover bg-center after:bg-[#a765235e] after:inset-0 after:absolute after:opacity-37 after:z-0">
       {/* Background Image */}
       <div className="absolute inset-0 bg-cover bg-center">
         <div className="absolute inset-0 bg-black/50" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto py-12 md:py-0  h-full md:h-auto">
+      <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto py-12 md:py-0   md:h-auto">
         <p className="text-lg md:text-xl mb-8 tracking-[0.3em] font-light uppercase">
           15 Novembre 2025
         </p>
