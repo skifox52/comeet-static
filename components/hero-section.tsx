@@ -93,14 +93,6 @@ export default function HeroSection() {
               Minutes
             </div>
           </div>
-          <div className="text-center">
-            <div className="text-7xl md:text-8xl lg:text-9xl font-serif font-bold mb-3 leading-none">
-              {timeLeft.minutes}
-            </div>
-            <div className="text-xs md:text-sm uppercase tracking-[0.3em] font-light">
-              Minutes
-            </div>
-          </div>
         </div>
       </div>
     </section>
