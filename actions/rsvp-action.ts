@@ -19,7 +19,10 @@ export async function submitRsvpAction(
       firstName: formData.get("firstName"),
       lastName: formData.get("lastName"),
       attending: formData.get("attending"),
-      accompanied: formData.get("accompanied"),
+      accompanied:
+        formData.get("accompanied") === ""
+          ? "non"
+          : formData.get("accompanied"),
       guestCount: formData.get("guestCount")
         ? Number(formData.get("guestCount"))
         : 0,
@@ -73,7 +76,7 @@ export async function submitRsvpAction(
       attending_status: [
         attendingStatus,
         ...(totalCount && totalCount > 1
-          ? Array(totalCount - 1).fill("2")
+          ? Array(totalCount - 1).fill(attendingStatus)
           : []),
       ],
       message: validatedData.message,

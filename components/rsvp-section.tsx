@@ -184,7 +184,7 @@ export default function RsvpSection() {
             {/* Attending */}
             <div>
               <Label className="text-[#8B2332] mb-3 block">
-                Serais-tu présent à la réception ?{" "}
+                Seras-tu présent à la réception ?{" "}
                 <span className="text-red-500">*</span>
               </Label>
               <RadioGroup
@@ -213,7 +213,7 @@ export default function RsvpSection() {
                     htmlFor="pas-sur"
                     className="font-normal cursor-pointer"
                   >
-                    Je ne suis pas encore sûr, je t'informerai de la réponse
+                    Je ne suis pas encore sûr, je vous informerai de la réponse
                     plus tard.
                   </Label>
                 </div>
@@ -226,41 +226,43 @@ export default function RsvpSection() {
             </div>
 
             {/* Accompanied */}
-            <div>
-              <Label className="text-[#8B2332] mb-3 block">
-                Seras-tu accompagné ? <span className="text-red-500">*</span>
-              </Label>
-              <RadioGroup
-                // Controlled by watch("accompanied")
-                value={accompanied || ""}
-                onValueChange={handleAccompaniedChange}
-                className="space-y-2"
-              >
-                <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="oui" id="accompanied-oui" />
-                  <Label
-                    htmlFor="accompanied-oui"
-                    className="font-normal cursor-pointer"
-                  >
-                    Oui
-                  </Label>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="non" id="accompanied-non" />
-                  <Label
-                    htmlFor="accompanied-non"
-                    className="font-normal cursor-pointer"
-                  >
-                    Non
-                  </Label>
-                </div>
-              </RadioGroup>
-              {errors.accompanied && (
-                <p className="text-xs text-red-500 mt-1">
-                  {errors.accompanied.message}
-                </p>
-              )}
-            </div>
+            {attending !== "non" && (
+              <div>
+                <Label className="text-[#8B2332] mb-3 block">
+                  Seras-tu accompagné ? <span className="text-red-500">*</span>
+                </Label>
+                <RadioGroup
+                  // Controlled by watch("accompanied")
+                  value={accompanied || ""}
+                  onValueChange={handleAccompaniedChange}
+                  className="space-y-2"
+                >
+                  <div className="flex items-center space-x-2">
+                    <RadioGroupItem value="oui" id="accompanied-oui" />
+                    <Label
+                      htmlFor="accompanied-oui"
+                      className="font-normal cursor-pointer"
+                    >
+                      Oui
+                    </Label>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <RadioGroupItem value="non" id="accompanied-non" />
+                    <Label
+                      htmlFor="accompanied-non"
+                      className="font-normal cursor-pointer"
+                    >
+                      Non
+                    </Label>
+                  </div>
+                </RadioGroup>
+                {errors.accompanied && (
+                  <p className="text-xs text-red-500 mt-1">
+                    {errors.accompanied.message}
+                  </p>
+                )}
+              </div>
+            )}
 
             {accompanied === "oui" && (
               <div>

@@ -30,14 +30,11 @@ export default function LocationsSection() {
   return (
     <section className="py-16 md:py-24 px-4 bg-white" id="locations-section">
       <div className="max-w-6xl mx-auto">
-        <h2 className="font-serif text-3xl md:text-4xl text-center text-[#8B2332] mb-4">
+        <h2 className="font-serif text-3xl md:text-4xl text-center text-[#8B2332] mb-4 mb-12">
           Les adresses du grand jour !
         </h2>
-        <p className="text-center text-gray-600 mb-12">
-          Les emplacements des lieux
-        </p>
 
-        <div className="grid md:grid-cols-2 gap-8 items-start">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Locations List */}
           <div className="space-y-8">
             {locations.map((location, index) => (

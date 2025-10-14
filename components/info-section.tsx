@@ -30,7 +30,7 @@ export default function InfoSection() {
               </div>
 
               <div className="pt-4 border-t border-white/20">
-                <p className="text-sm my-2 font-bold">Contact le jour J</p>
+                <p className="text-sm my-2 font-bold">Contacts le jour J</p>
                 <div className="space-y-1 text-sm">
                   <p className="text-sm font-bold mt-2 italic ">
                     Famille de la mariée :

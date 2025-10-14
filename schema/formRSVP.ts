@@ -8,9 +8,11 @@ export const rsvpFormSchema = z
     attending: z.enum(["oui", "non", "pas-sur"], {
       required_error: "Indique ta présence",
     }),
-    accompanied: z.enum(["oui", "non"], {
-      required_error: "Merci d’indiquer si tu seras accompagné.",
-    }),
+    accompanied: z
+      .enum(["oui", "non"], {
+        required_error: "Merci d’indiquer si tu seras accompagné.",
+      })
+      .optional(),
     guestCount: z.number().min(0).max(SEAT_LIMIT).optional(),
     guests: z
       .array(
@@ -44,6 +46,18 @@ export const rsvpFormSchema = z
     {
       message: "Merci de remplir tous les noms des invités.",
       path: ["guests"],
+    }
+  )
+  .refine(
+    (data) => {
+      if (data.attending === "oui" || data.attending === "pas-sur") {
+        return data.accompanied === "oui" || data.accompanied === "non"
+      }
+      return true
+    },
+    {
+      message: "Merci d’indiquer si tu seras accompagné.",
+      path: ["accompanied"],
     }
   )
 
