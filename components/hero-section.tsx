@@ -37,36 +37,38 @@ export default function HeroSection() {
   }
 
   return (
-    <section className="relative min-h-screen  flex items-center justify-center overflow-hidden bg-[url('/hero.jpeg')]  bg-cover bg-center after:bg-[#a765235e] after:inset-0 after:absolute after:opacity-37 after:z-0">
+    <section className="relative h-screen flex items-center justify-center overflow-hidden bg-[url('/hero.jpeg')] bg-cover bg-center after:bg-[#a765235e] after:inset-0 after:absolute after:opacity-37 after:z-0">
       {/* Background Image */}
       <div className="absolute inset-0 bg-cover bg-center">
         <div className="absolute inset-0 bg-black/50" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto py-12 md:py-0   md:h-auto">
-        <p className="text-lg md:text-xl mb-8 tracking-[0.3em] font-light uppercase">
+      <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto h-full md:flex md:items-center md:justify-center md:py-0 py-12 flex flex-col justify-between">
+        <p className="text-lg md:text-xl md:mb-8 tracking-[0.3em] font-light uppercase md:absolute md:top-12">
           15 Novembre 2025
         </p>
 
-        <h1 className="font-serif text-3xl mt-44 md:mt-0 md:text-5xl lg:text-6xl mb-8  tracking-[0.15em] font-bold">
-          SOPHIE & YACINE
-        </h1>
+        <div className="md:flex md:flex-col md:items-center md:justify-center">
+          <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl md:mb-8 tracking-[0.15em] font-bold mt-12 md:mt-0">
+            SOPHIE & YACINE
+          </h1>
 
-        <p className="text-base  md:text-2xl mb-10  leading-relaxed tracking-wide font-medium">
-          ont la joie de te convier à leur mariage
-          <br />
-          qui aura lieu le 15 novembre 2025 aux Salons Hoche
-        </p>
+          <p className="text-base md:text-2xl md:mb-10 leading-relaxed tracking-wide font-medium mt-12 md:mt-0">
+            ont la joie de te convier à leur mariage
+            <br />
+            qui aura lieu le 15 novembre 2025 aux Salons Hoche
+          </p>
 
-        <Button
-          onClick={scrollToRsvp}
-          className="text-[#8B2332] hover:bg-[#6B1A26] hover:text-white bg-white px-10 py-6 mt-16 md:mt-0  text-sm tracking-wider rounded-xl transition-all duration-300 hover:scale-105 uppercase"
-        >
-          Confirmer sa présence
-        </Button>
+          <Button
+            onClick={scrollToRsvp}
+            className="text-[#8B2332] hover:bg-[#6B1A26] hover:text-white bg-white px-10 py-6 text-sm tracking-wider rounded-xl transition-all duration-300 hover:scale-105 uppercase mt-12 md:mt-8"
+          >
+            Confirmer sa présence
+          </Button>
+        </div>
 
-        <div className="mt-32 md:mt-16 flex justify-center gap-12 md:gap-20 lg:gap-24">
+        <div className="mt-12 md:mt-0 md:absolute md:bottom-12 flex justify-center gap-12 md:gap-20 lg:gap-24 w-full">
           <div className="text-center">
             <div className="text-7xl md:text-8xl lg:text-9xl font-serif font-bold mb-3 leading-none">
               {timeLeft.days}
@@ -81,6 +83,14 @@ export default function HeroSection() {
             </div>
             <div className="text-xs md:text-sm uppercase tracking-[0.3em] font-light">
               Heures
+            </div>
+          </div>
+          <div className="text-center">
+            <div className="text-7xl md:text-8xl lg:text-9xl font-serif font-bold mb-3 leading-none">
+              {timeLeft.minutes}
+            </div>
+            <div className="text-xs md:text-sm uppercase tracking-[0.3em] font-light">
+              Minutes
             </div>
           </div>
           <div className="text-center">
