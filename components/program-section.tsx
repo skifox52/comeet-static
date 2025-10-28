@@ -10,8 +10,8 @@ export default function ProgramSection() {
     {
       time: "15h30",
       title: "Séance Photo",
-      location: "Parc Monceau",
-      address: "1 Avenue Van Dyck 75008 Paris",
+      location: "Parc de Bagatelle",
+      address: "Route de Sèvres à Neuilly, Paris 16e",
       parking: "Parking INDIGO Hoche - 18 Avenue Hoche, 75008 Paris",
     },
     {
