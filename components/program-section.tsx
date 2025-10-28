@@ -12,7 +12,6 @@ export default function ProgramSection() {
       title: "Séance Photo",
       location: "Parc de Bagatelle",
       address: "Route de Sèvres à Neuilly, Paris 16e",
-      parking: "Parking INDIGO Hoche - 18 Avenue Hoche, 75008 Paris",
     },
     {
       time: "18h30",
