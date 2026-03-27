@@ -25,7 +25,7 @@ export default function ProgramSection() {
   return (
     <section className="py-16 md:py-24 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="font-serif text-3xl md:text-4xl text-center text-[#8B2332] mb-4">
+        <h2 className="font-serif text-3xl md:text-4xl text-center text-[#721c34] mb-4">
           Programme de la journée
         </h2>
         <p className="text-center text-gray-600 mb-12">Cérémonie & Réception</p>
@@ -35,7 +35,7 @@ export default function ProgramSection() {
           <div className="space-y-8">
             {events.map((event, index) => (
               <div key={index} className="flex gap-4">
-                <div className="text-[#8B2332] font-light text-lg min-w-[60px]">
+                <div className="text-[#721c34] font-light text-lg min-w-[60px]">
                   {event.time}
                 </div>
                 <div className="flex-1">

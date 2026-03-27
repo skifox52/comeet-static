@@ -35,7 +35,7 @@ const getMapSrc = (index: number | null) => {
   return (
     <section className="py-16 md:py-24 px-4 bg-white" id="locations-section">
       <div className="max-w-6xl mx-auto">
-        <h2 className="font-serif text-3xl md:text-4xl text-center text-[#8B2332] mb-4 mb-12">
+        <h2 className="font-serif text-3xl md:text-4xl text-center text-[#721c34] mb-4 mb-12">
           Les adresses du grand jour !
         </h2>
 
@@ -45,10 +45,10 @@ const getMapSrc = (index: number | null) => {
             {locations.map((location, index) => (
               <div
                 key={index}
-                className="border-l-2 border-[#8B2332] pl-6 cursor-pointer hover:bg-gray-50 p-4 -ml-4 transition-colors"
+                className="border-l-2 border-[#721c34] pl-6 cursor-pointer hover:bg-gray-50 p-4 -ml-4 transition-colors"
                 onClick={() => setSelectedLocation(index)}
               >
-                <h3 className="text-[#8B2332] font-medium mb-2">
+                <h3 className="text-[#721c34] font-medium mb-2">
                   {location.title}
                 </h3>
                 <p className="font-medium text-gray-900 mb-1">
@@ -65,7 +65,7 @@ const getMapSrc = (index: number | null) => {
                     href={location.mapsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#8B2332] text-sm hover:underline inline-flex items-center gap-1"
+                    className="text-[#721c34] text-sm hover:underline inline-flex items-center gap-1"
                     onClick={(e) => e.stopPropagation()}
                   >
                     <svg

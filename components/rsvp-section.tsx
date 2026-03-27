@@ -126,14 +126,14 @@ export default function RsvpSection() {
           <div className="flex justify-center items-center mb-8 mx-[25%]">
             <svg
               viewBox="0 0 100 100"
-              className="w-12 h-12 text-[#8B2332]"
+              className="w-12 h-12 text-[#721c34]"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
               <image href="/Logo.svg" height="100" width="100" />
             </svg>
           </div>
-          <h2 className="font-serif text-3xl md:text-4xl text-[#8B2332] mb-4">
+          <h2 className="font-serif text-3xl md:text-4xl text-[#721c34] mb-4">
             Confirmer sa présence
           </h2>
           <p className="text-sm text-gray-600 max-w-md leading-relaxed">
@@ -149,7 +149,7 @@ export default function RsvpSection() {
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
             {/* Name Fields */}
             <div>
-              <Label className="text-[#8B2332] mb-3 block">
+              <Label className="text-[#721c34] mb-3 block">
                 Merci d'indiquer ton nom et prénom{" "}
                 <span className="text-red-500">*</span>
               </Label>
@@ -183,7 +183,7 @@ export default function RsvpSection() {
 
             {/* Attending */}
             <div>
-              <Label className="text-[#8B2332] mb-3 block">
+              <Label className="text-[#721c34] mb-3 block">
                 Seras-tu présent à la réception ?{" "}
                 <span className="text-red-500">*</span>
               </Label>
@@ -228,7 +228,7 @@ export default function RsvpSection() {
             {/* Accompanied */}
             {attending !== "non" && (
               <div>
-                <Label className="text-[#8B2332] mb-3 block">
+                <Label className="text-[#721c34] mb-3 block">
                   Seras-tu accompagné ? <span className="text-red-500">*</span>
                 </Label>
                 <RadioGroup
@@ -266,7 +266,7 @@ export default function RsvpSection() {
 
             {accompanied === "oui" && (
               <div>
-                <Label className="text-[#8B2332] mb-3 block">
+                <Label className="text-[#721c34] mb-3 block">
                   Combien de personnes t'accompagneront ?{" "}
                   <span className="text-red-500">*</span>
                 </Label>
@@ -297,7 +297,7 @@ export default function RsvpSection() {
 
                 {!!guestCount && guestCount > 0 && (
                   <div className="space-y-4">
-                    <Label className="text-[#8B2332] block">
+                    <Label className="text-[#721c34] block">
                       Merci d’indiquer le(s) nom(s) et prénom(s) des personnes
                       qui t’accompagneront.
                     </Label>
@@ -356,7 +356,7 @@ export default function RsvpSection() {
 
             {/* Message */}
             <div>
-              <Label htmlFor="message" className="text-[#8B2332] mb-3 block">
+              <Label htmlFor="message" className="text-[#721c34] mb-3 block">
                 Message
               </Label>
               <Textarea
@@ -386,7 +386,7 @@ export default function RsvpSection() {
             <Button
               type="submit"
               disabled={isPending}
-              className="w-full bg-[#8B2332] hover:bg-[#6B1A26] text-white py-6 text-base disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center"
+              className="w-full bg-[#721c34] hover:bg-[#6B1A26] text-white py-6 text-base disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center"
             >
               {isPending ? (
                 <>

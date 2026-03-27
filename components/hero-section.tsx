@@ -62,7 +62,7 @@ export default function HeroSection() {
 
           <Button
             onClick={scrollToRsvp}
-            className="text-[#8B2332] hover:bg-[#6B1A26] hover:text-white bg-white px-10 py-6 text-sm tracking-wider rounded-xl transition-all duration-300 hover:scale-105 uppercase mt-12 md:mt-8"
+            className="text-[#721c34] hover:bg-[#6B1A26] hover:text-white bg-white px-10 py-6 text-sm tracking-wider rounded-xl transition-all duration-300 hover:scale-105 uppercase mt-12 md:mt-8"
           >
             Confirmer sa présence
           </Button>

@@ -2,20 +2,20 @@ export default function InfoSection() {
   return (
     <section className="py-16 md:py-24 px-4 bg-white" id="info-section">
       <div className="max-w-6xl mx-auto">
-        <h2 className="font-serif text-3xl md:text-4xl text-center text-[#8B2332] mb-12">
+        <h2 className="font-serif text-3xl md:text-4xl text-center text-[#721c34] mb-12">
           Plus d&apos;informations
         </h2>
 
         <div className="grid md:grid-cols-2 gap-6">
           {/* Left Card - Placeholder */}
-          <div className="bg-[#8B2332] rounded-lg p-12 min-h-[300px] flex items-center justify-center">
+          <div className="bg-[#721c34] rounded-lg p-12 min-h-[300px] flex items-center justify-center">
             <div className="text-white text-center">
               <p className="text-lg">Informations complémentaires</p>
             </div>
           </div>
 
           {/* Right Card - Contacts */}
-          <div className="bg-[#8B2332] rounded-lg p-8 md:p-12 text-white">
+          <div className="bg-[#721c34] rounded-lg p-8 md:p-12 text-white">
             <h3 className="font-serif text-2xl mb-6 text-center">Contacts</h3>
 
             <div className="space-y-6">
