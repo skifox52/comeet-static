@@ -25,7 +25,7 @@ export default function InfoSection() {
                 </p>
                 <div className="space-y-1">
                   <p className="text-sm">Katia : 06 09 42 17 86</p>
-                  <p className="text-sm">Yacine : 06 09 42 17 86</p>
+                  <p className="text-sm">Adel : 06 09 42 17 86</p>
                 </div>
               </div>
 
