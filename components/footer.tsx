@@ -32,7 +32,7 @@ export default function Footer() {
                 textAnchor="middle"
                 className="font-serif italic font-2xl"
               >
-                S&Y
+                k&A
               </text>
             </svg>
           </div>
