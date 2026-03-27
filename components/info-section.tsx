@@ -24,24 +24,20 @@ export default function InfoSection() {
                   Pour toute question, tu peux nous joindre :
                 </p>
                 <div className="space-y-1">
-                  <p className="text-sm">Sophie : 06 66 03 29 68</p>
-                  <p className="text-sm">Yacine : 06 27 68 20 56</p>
+                  <p className="text-sm">Katia : 06 09 42 17 86</p>
+                  <p className="text-sm">Yacine : 06 09 42 17 86</p>
                 </div>
               </div>
 
               <div className="pt-4 border-t border-white/20">
                 <p className="text-sm my-2 font-bold">Contacts le jour J</p>
                 <div className="space-y-1 text-sm">
-                  <p className="text-sm font-bold mt-2 italic ">
+                  {/* <p className="text-sm font-bold mt-2 italic ">
                     Famille de la mariée :
-                  </p>
-                  <p>Lisa : 06 59 19 09 15</p>
-                  <p>Samy : 06 45 68 27 24</p>
-                  <p className="text-sm font-bold mt-2 italic">
-                    Famille du marié :
-                  </p>
-                  <p>Sofiane : 07 60 42 56 63</p>
-                  <p>Halima : 06 66 42 65 47</p>
+                  </p> */}
+                  <p>Sara : 06 52 84 92 78</p>
+                  <p>Ali : 06 27 59 38 72</p>
+               
                 </div>
               </div>
             </div>

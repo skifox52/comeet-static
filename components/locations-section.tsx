@@ -8,25 +8,30 @@ export default function LocationsSection() {
   const locations = [
     {
       title: "Cérémonie civile",
-      name: "Mairie de Courbevoie",
-      address: "2 Pl. de l'Hôtel de ville, 92400 Courbevoie",
-      parking: "Parking Charras - 18 rue de l'Alma 92400 Courbevoie",
-      coordinates: { lat: 48.8977, lng: 2.2567 },
+      name: "",
+      address: "118 Avenue du Général de Gaulle, 94700 Maisons-Alfort",
+      parking: "",
+      coordinates: { lat: 48.800826, lng: 2.429777},
       mapsUrl:
-        "https://www.google.com/maps/dir/?api=1&destination=2+Pl.+de+l'Hôtel+de+ville,+92400+Courbevoie",
+        "https://maps.app.goo.gl/336oz3yaR5JXWfnY9",
     },
     {
-      title: "Salle de réception",
-      name: "Salons Hoche - Salon Elysée",
-      address: "9, avenue Hoche 75008",
+      title: "Dîner",
+      name: "Château des hauts de provins",
+      address: "Route de Ferreux, 77560",
       parking:
-        "Avenue Hoche ou Parking INDIGO Hoche - 18 Avenue Hoche, 75008 Paris",
-      coordinates: { lat: 48.8756, lng: 2.3019 },
+        "",
+      coordinates: { lat :48.68000425161868, lng: 3.2967379846586806},
       mapsUrl:
-        "https://www.google.com/maps/dir/?api=1&destination=9+avenue+Hoche+75008+Paris",
+        "https://maps.app.goo.gl/X3GvJH4auzd8x9Je6",
     },
   ]
-
+const getMapSrc = (index: number | null) => {
+  const loc = locations[index ?? 0]
+  const { lat, lng } = loc.coordinates
+  // This format shows a pin at the coordinates
+  return `https://maps.google.com/maps?q=${lat},${lng}&z=15&output=embed`
+}
   return (
     <section className="py-16 md:py-24 px-4 bg-white" id="locations-section">
       <div className="max-w-6xl mx-auto">
@@ -86,7 +91,7 @@ export default function LocationsSection() {
 
           <div className="rounded-lg overflow-hidden shadow-md h-[500px]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10495.234567890123!2d2.2567!3d48.8977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fec70fb1d8d%3A0x40b82c3688c9460!2sMairie%20de%20Courbevoie!5e0!3m2!1sfr!2sfr!4v1234567890123!5m2!1sfr!2sfr&markers=color:red%7C48.8977,2.2567%7C48.8756,2.3019"
+              src={getMapSrc(selectedLocation)}
               width="100%"
               height="100%"
               style={{ border: 0 }}
