@@ -3,32 +3,23 @@ export default function ProgramSection() {
     {
       time: "14h00",
       title: "Cérémonie Civile",
-      location: "Mairie de Courbevoie",
-      address: "2 Pl. de l'Hôtel de ville, 92400 Courbevoie",
-      parking: "Parking Charras - 18 rue de l'Alma 92400 Courbevoie",
+      location: "118 Avenue du Général de Gaulle",
+      address: "94700 Maisons-Alfort",
+      parking:""
     },
     {
-      time: "15h30",
-      title: "Séance Photo",
-      location: "Parc de Bagatelle",
-      address: "Route de Sèvres à Neuilly, Paris 16e",
+      time: "17h30",
+      title: "Cocktail",
+      location: "Château des hauts de provins",
+      address: "Route de Ferreux, 77560",
     },
     {
-      time: "18h30",
-      title: "Début des festivités !",
-      location: "Salons Hoche - Salon Elysée",
-      address: "9, avenue Hoche 75008",
-      parking:
-        "Avenue Hoche ou Parking INDIGO Hoche - 18 Avenue Hoche, 75008 Paris",
+      time: "20h30",
+      title: "Dîner",
+      location: "Château des hauts de provins",
+      address: "Route de Ferreux, 77560"
     },
-    {
-      time: "19h00",
-      title: "Arrivée des mariés & ouverture du cocktail",
-      location: "Salons Hoche - Salon Elysée",
-      address: "9, avenue Hoche 75008",
-      parking:
-        "Avenue Hoche ou Parking INDIGO Hoche - 18 Avenue Hoche, 75008 Paris",
-    },
+   
   ]
 
   return (
@@ -53,9 +44,9 @@ export default function ProgramSection() {
                   </h3>
                   <p className="text-sm text-gray-600 mb-1">{event.location}</p>
                   <p className="text-xs text-gray-500">{event.address}</p>
-                  {event.parking && (
+                  {event?.parking && (
                     <p className="text-xs text-gray-500 mt-1">
-                      Stationnement : {event.parking}
+                      Stationnement : {event?.parking}
                     </p>
                   )}
                 </div>
@@ -66,7 +57,7 @@ export default function ProgramSection() {
           {/* Image */}
           <div className="rounded-lg overflow-hidden w-fit mx-auto h-[400px] md:h-[500px]">
             <img
-              src="/prog.jpg"
+              src="/prog-2.1.png"
               alt="Hawa Mahal"
               className="w-fit h-full object-center mx-auto object-cover"
             />

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 
 export default function HeroSection() {
-  const weddingDate = new Date("2025-11-15T14:00:00")
+  const weddingDate = new Date("2026-04-17T13:00:00")
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -37,7 +37,7 @@ export default function HeroSection() {
   }
 
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden bg-[url('/hero.jpeg')] bg-cover bg-center after:bg-[#a765235e] after:inset-0 after:absolute after:opacity-37 after:z-0">
+    <section className="relative h-screen flex items-center justify-center overflow-hidden bg-[url('/hero-2.png')] bg-cover bg-center after:bg-[#721c3415] after:inset-0 after:absolute  after:z-0">
       {/* Background Image */}
       <div className="absolute inset-0 bg-cover bg-center">
         <div className="absolute inset-0 bg-black/50" />
@@ -46,18 +46,18 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto h-full md:flex md:items-center md:justify-center md:py-0 py-16 flex flex-col justify-between">
         <p className="text-lg md:text-xl md:mb-8 tracking-[0.3em] font-light uppercase md:absolute md:top-12">
-          15 Novembre 2025
+          17 Avril 2026
         </p>
 
         <div className="md:flex md:flex-col md:items-center md:justify-center">
           <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl md:mb-8 tracking-[0.15em] font-bold mt-12 md:mt-0">
-            SOPHIE & YACINE
+            KATIA & ADEL
           </h1>
 
           <p className="text-base md:text-2xl md:mb-10 leading-relaxed tracking-wide font-medium mt-12 md:mt-0">
             ont la joie de te convier à leur mariage
             <br />
-            qui aura lieu le 15 novembre 2025 aux Salons Hoche
+            qui aura lieu le 17 avril 2026 aux Château des hauts de provins
           </p>
 
           <Button

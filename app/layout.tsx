@@ -21,7 +21,7 @@ const lato = Lato({
 })
 
 export const metadata: Metadata = {
-  title: "Sophie & Yacine - 15 Novembre 2025",
+  title: "Katia & Adel - 17 Avril 2026",
   description: "Rejoins-nous pour célébrer notre mariage.",
 }
 
