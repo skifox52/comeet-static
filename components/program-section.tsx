@@ -3,8 +3,8 @@ export default function ProgramSection() {
     {
       time: "14h00",
       title: "Cérémonie Civile",
-      location: "Mairie de Maisons-Alfort 118 Avenue du Général de Gaulle",
-      address: "94700 Maisons-Alfort",
+      location: "Mairie de Maisons-Alfort",
+      address: "118 Avenue du Général de Gaulle, 94700 Maisons-Alfort",
       parking:""
     },
       {
