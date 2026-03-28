@@ -17,8 +17,8 @@ export default function LocationsSection() {
     },
     {
       title: "Dîner",
-      name: "Château des hauts de provins",
-      address: "Route de Ferreux, 77560",
+      name: "Château des Hauts de Provins",
+      address: "Route de Ferreux, 77560 Champcenest",
       parking:
         "",
       coordinates: { lat :48.68000425161868, lng: 3.2967379846586806},

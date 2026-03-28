@@ -57,7 +57,7 @@ export default function HeroSection() {
           <p className="text-base md:text-2xl md:mb-10 leading-relaxed tracking-wide font-medium mt-12 md:mt-0">
             ont la joie de te convier à leur mariage
             <br />
-            qui aura lieu le 17 avril 2026 aux Château des hauts de provins
+            qui aura lieu le 17 avril 2026 aux Château des Hauts de Provins
           </p>
 
           <Button

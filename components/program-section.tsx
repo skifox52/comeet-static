@@ -3,21 +3,27 @@ export default function ProgramSection() {
     {
       time: "14h00",
       title: "Cérémonie Civile",
-      location: "118 Avenue du Général de Gaulle",
+      location: "Mairie de Maisons-Alfort 118 Avenue du Général de Gaulle",
       address: "94700 Maisons-Alfort",
       parking:""
     },
+      {
+      time: "17h00",
+      title: "Séance photos",
+      location: "Château des Hauts de Provins",
+      address: "Route de Ferreux, 77560 Champcenest",
+    },
     {
-      time: "17h30",
-      title: "Cocktail",
-      location: "Château des hauts de provins",
-      address: "Route de Ferreux, 77560",
+      time: "18h00",
+      title: "Cocktail de bienvenue",
+      location: "Château des Hauts de Provins",
+      address: "Route de Ferreux, 77560 Champcenest",
     },
     {
       time: "20h30",
       title: "Dîner",
-      location: "Château des hauts de provins",
-      address: "Route de Ferreux, 77560"
+      location: "Château des Hauts de Provins",
+      address: "Route de Ferreux, 77560 Champcenest"
     },
    
   ]
