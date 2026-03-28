@@ -8,7 +8,7 @@ export default function LocationsSection() {
   const locations = [
     {
       title: "Cérémonie civile",
-      name: "",
+      name: "Mairie de Maisons-Alfort",
       address: "118 Avenue du Général de Gaulle, 94700 Maisons-Alfort",
       parking: "",
       coordinates: { lat: 48.800826, lng: 2.429777},
